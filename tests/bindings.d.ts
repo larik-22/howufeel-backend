@@ -1,8 +1,12 @@
 import type { D1Migration } from "cloudflare:test";
-import type { Env as AppEnv } from "../src/bindings";
 
-export type Env = AppEnv & {
-  MIGRATIONS: D1Migration[];
+export type Env = {
+  TEMPLATES_KV: KVNamespace;
+  SMTP_HOST: string;
+  SMTP_PORT: string;
+  SMTP_USER: string;
+  SMTP_PASSWORD: string;
+  MIGRATIONS?: D1Migration[];
 };
 
 declare module "cloudflare:test" {

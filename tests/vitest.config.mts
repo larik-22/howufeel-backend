@@ -5,18 +5,19 @@ export default defineWorkersConfig({
     target: "esnext",
   },
   test: {
-    setupFiles: [], // No database setup needed for mail tests
+    setupFiles: [],
     poolOptions: {
       workers: {
         singleWorker: true,
-        wrangler: {
-          configPath: "../wrangler.jsonc",
-        },
         miniflare: {
-          compatibilityFlags: ["experimental", "nodejs_compat"],
+          compatibilityFlags: ["experimental", "nodejs_compat", "export_commonjs_default"],
           bindings: {
-            // No database bindings needed
+            SMTP_HOST: "smtp.hostinger.com",
+            SMTP_PORT: "465",
+            SMTP_USER: "test@howufeelingtoday.online",
+            SMTP_PASSWORD: "test-password",
           },
+          kvNamespaces: ["TEMPLATES_KV"],
         },
       },
     },

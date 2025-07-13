@@ -1,11 +1,25 @@
 import { ApiException, fromHono } from "chanfana";
 import { Hono } from "hono";
+import { cors } from "hono/cors";
 import { mailRouter } from "./endpoints/mail/router";
 import { ContentfulStatusCode } from "hono/utils/http-status";
 import { SetupTemplates } from "./endpoints/setupTemplates";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
+
+// Add CORS middleware
+app.use("*", cors({
+  origin: [
+    "https://howufeelingtoday.online",
+    "https://howufeelin-6c920.web.app",
+    "http://localhost:5173", // for local development
+    "http://localhost:8787", // for local testing
+  ],
+  allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+}));
 
 app.onError((err, c) => {
   if (err instanceof ApiException) {
