@@ -3,7 +3,6 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { mailRouter } from "./endpoints/mail/router";
 import { ContentfulStatusCode } from "hono/utils/http-status";
-import { SetupTemplates } from "./endpoints/setupTemplates";
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
@@ -56,9 +55,6 @@ const openapi = fromHono(app, {
 
 // Register Mail API routes
 openapi.route("/mail", mailRouter);
-
-// Register setup endpoints
-openapi.post("/setup/templates", SetupTemplates);
 
 // Export the Hono app
 export default app;

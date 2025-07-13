@@ -6,11 +6,6 @@ A Cloudflare Worker backend service that powers the HowUFeel application's email
 
 Mood tracking app for groups. Visit at [https://howufeelingtoday.online](https://howufeelingtoday.online)
 
-Build with: 
-- React 19
-- React Router 7
-- MUI components
-- Firebase
 
 ## Technical Stack
 
