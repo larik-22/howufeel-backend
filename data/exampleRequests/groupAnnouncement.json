@@ -1,0 +1,21 @@
+{
+	"data": {
+		"from_name": "rizelsucks",
+		"group_name": "SwagCentral",
+		"rating": 6,
+		"message": "😐",
+		"note": "my stomach is in shambles..just dropped tanya off (modern woman) and we had a intresting bonding time, learned more about each other..strange to think we met by chance but i must say i feel a bit weird and sad #reminiscing. Saw the bella roma boss and i am really craving a cannelloni now. Don't know what dinner has in store but considering everything is closed might just end up being tears and air.\nand king i think you should break out into dance and express yourself as you please",
+		"recipients": [
+			{
+				"to_email": "llblack1416@gmail.com",
+				"to_name": "Raf The Feeler"
+			},
+			{ "to_email": "ceo@taken.red", "to_name": "taken" },
+			{ "to_email": "egidijus.ukrinas@gmail.com", "to_name": "Egidijus" },
+			{ "to_email": "larikpetriv@gmail.com", "to_name": "dr_GAS" },
+			{ "to_email": "ilia1892006@gmail.com", "to_name": "da22le" }
+		]
+	},
+	"timestamp": "2025-07-12T20:33:58.972Z",
+	"event": "rating_notification"
+}

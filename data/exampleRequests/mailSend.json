@@ -1,0 +1,13 @@
+{
+  "to": "user@example.com",
+  "subject": "Your Daily Mood Update",
+  "template_name": "group",
+  "template_data": {
+    "group_name": "My Awesome Team",
+    "to_name": "John",
+    "from_name": "Sarah",
+    "rating": "8",
+    "message": "Feeling Great",
+    "note": "Had a productive day working on the new features!"
+  }
+} 

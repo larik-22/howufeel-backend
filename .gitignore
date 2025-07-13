@@ -10,3 +10,4 @@ pnpm-error.log
 pnpm-lock.yaml
 pnpm-workspace.yaml
 node_modules/
+.dev.vars

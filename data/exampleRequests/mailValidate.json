@@ -1,0 +1,11 @@
+{
+  "template_name": "group",
+  "template_data": {
+    "group_name": "My Test Group",
+    "to_name": "Alice",
+    "from_name": "Bob",
+    "rating": "7",
+    "message": "Good day overall",
+    "note": "Some challenges but manageable"
+  }
+} 

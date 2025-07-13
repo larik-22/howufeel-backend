@@ -1,0 +1,2 @@
+- [ ] Auth for requests, restrict domains 
+- [ ] Add logging

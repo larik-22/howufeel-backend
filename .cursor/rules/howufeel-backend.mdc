@@ -1,0 +1,8 @@
+---
+alwaysApply: true
+---
+- This is cloudfare worker that serves as a backend for the howufeel app.
+- It is built with hono and chanfana.
+- It is deployed to cloudflare workers.
+- Main functionality for now is mailing. 
+- Our email is served by Hostinger. The smpt is smtp.hostinger.com; port 465

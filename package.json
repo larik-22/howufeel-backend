@@ -20,19 +20,19 @@
   "scripts": {
     "cf-typegen": "wrangler types",
     "deploy": "wrangler deploy",
-    "dev": "pnpm seedLocalDb && wrangler dev",
-    "predeploy": "wrangler d1 migrations apply DB --remote",
-    "seedLocalDb": "wrangler d1 migrations apply DB --local",
+    "dev": "wrangler dev",
     "schema": "npx chanfana",
     "test": "wrangler deploy --dry-run && npx vitest run --config tests/vitest.config.mts"
   },
   "dependencies": {
     "chanfana": "2.8.1",
     "hono": "4.8.2",
+    "worker-mailer": "^1.1.4",
     "zod": "3.25.67"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "0.8.44",
+    "@cloudflare/workers-types": "^4.20250712.0",
     "@types/node": "24.0.4",
     "typescript": "5.8.3",
     "wrangler": "^4.24.3"
